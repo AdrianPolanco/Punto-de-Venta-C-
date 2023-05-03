@@ -1,0 +1,14 @@
+C:\Users\adfer\source\repos\PuntodeVenta\PuntodeVenta\bin\Debug\PuntodeVenta.exe.config
+C:\Users\adfer\source\repos\PuntodeVenta\PuntodeVenta\bin\Debug\PuntodeVenta.exe
+C:\Users\adfer\source\repos\PuntodeVenta\PuntodeVenta\bin\Debug\PuntodeVenta.pdb
+C:\Users\adfer\source\repos\PuntodeVenta\PuntodeVenta\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\adfer\source\repos\PuntodeVenta\PuntodeVenta\obj\Debug\CapaPresentacion.csproj.AssemblyReference.cache
+C:\Users\adfer\source\repos\PuntodeVenta\PuntodeVenta\obj\Debug\CapaPresentacion.csproj.SuggestedBindingRedirects.cache
+C:\Users\adfer\source\repos\PuntodeVenta\PuntodeVenta\obj\Debug\PuntodeVenta.Inicio.resources
+C:\Users\adfer\source\repos\PuntodeVenta\PuntodeVenta\obj\Debug\PuntodeVenta.Login.resources
+C:\Users\adfer\source\repos\PuntodeVenta\PuntodeVenta\obj\Debug\PuntodeVenta.Properties.Resources.resources
+C:\Users\adfer\source\repos\PuntodeVenta\PuntodeVenta\obj\Debug\CapaPresentacion.csproj.GenerateResource.cache
+C:\Users\adfer\source\repos\PuntodeVenta\PuntodeVenta\obj\Debug\CapaPresentacion.csproj.CoreCompileInputs.cache
+C:\Users\adfer\source\repos\PuntodeVenta\PuntodeVenta\obj\Debug\CapaPresentacion.csproj.CopyComplete
+C:\Users\adfer\source\repos\PuntodeVenta\PuntodeVenta\obj\Debug\PuntodeVenta.exe
+C:\Users\adfer\source\repos\PuntodeVenta\PuntodeVenta\obj\Debug\PuntodeVenta.pdb
