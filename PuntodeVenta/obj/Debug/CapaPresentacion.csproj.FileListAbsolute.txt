@@ -12,3 +12,9 @@ C:\Users\adfer\source\repos\PuntodeVenta\PuntodeVenta\obj\Debug\CapaPresentacion
 C:\Users\adfer\source\repos\PuntodeVenta\PuntodeVenta\obj\Debug\CapaPresentacion.csproj.CopyComplete
 C:\Users\adfer\source\repos\PuntodeVenta\PuntodeVenta\obj\Debug\PuntodeVenta.exe
 C:\Users\adfer\source\repos\PuntodeVenta\PuntodeVenta\obj\Debug\PuntodeVenta.pdb
+C:\Users\adfer\source\repos\PuntodeVenta\PuntodeVenta\bin\Debug\CapaEntidad.dll
+C:\Users\adfer\source\repos\PuntodeVenta\PuntodeVenta\bin\Debug\CapaNegocio.dll
+C:\Users\adfer\source\repos\PuntodeVenta\PuntodeVenta\bin\Debug\CapaDatos.dll
+C:\Users\adfer\source\repos\PuntodeVenta\PuntodeVenta\bin\Debug\CapaEntidad.pdb
+C:\Users\adfer\source\repos\PuntodeVenta\PuntodeVenta\bin\Debug\CapaNegocio.pdb
+C:\Users\adfer\source\repos\PuntodeVenta\PuntodeVenta\bin\Debug\CapaDatos.pdb

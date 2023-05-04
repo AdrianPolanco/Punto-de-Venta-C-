@@ -1,0 +1,6 @@
+C:\Users\adfer\source\repos\PuntodeVenta\CapaEntidad\bin\Debug\CapaEntidad.dll
+C:\Users\adfer\source\repos\PuntodeVenta\CapaEntidad\bin\Debug\CapaEntidad.pdb
+C:\Users\adfer\source\repos\PuntodeVenta\CapaEntidad\obj\Debug\CapaEntidad.csproj.AssemblyReference.cache
+C:\Users\adfer\source\repos\PuntodeVenta\CapaEntidad\obj\Debug\CapaEntidad.csproj.CoreCompileInputs.cache
+C:\Users\adfer\source\repos\PuntodeVenta\CapaEntidad\obj\Debug\CapaEntidad.dll
+C:\Users\adfer\source\repos\PuntodeVenta\CapaEntidad\obj\Debug\CapaEntidad.pdb

@@ -40,6 +40,8 @@
             this.menutitulo = new System.Windows.Forms.MenuStrip();
             this.nameLabel = new System.Windows.Forms.Label();
             this.Contenedor = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lblUsuario = new System.Windows.Forms.Label();
             this.menu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -197,6 +199,7 @@
             this.nameLabel.Size = new System.Drawing.Size(155, 49);
             this.nameLabel.TabIndex = 2;
             this.nameLabel.Text = "FastSale";
+            this.nameLabel.Click += new System.EventHandler(this.nameLabel_Click);
             // 
             // Contenedor
             // 
@@ -206,11 +209,38 @@
             this.Contenedor.Size = new System.Drawing.Size(800, 318);
             this.Contenedor.TabIndex = 3;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.PaleGreen;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(573, 16);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(84, 23);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Usuario:";
+            // 
+            // lblUsuario
+            // 
+            this.lblUsuario.AutoSize = true;
+            this.lblUsuario.BackColor = System.Drawing.Color.PaleGreen;
+            this.lblUsuario.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.lblUsuario.ForeColor = System.Drawing.Color.White;
+            this.lblUsuario.Location = new System.Drawing.Point(663, 16);
+            this.lblUsuario.Name = "lblUsuario";
+            this.lblUsuario.Size = new System.Drawing.Size(77, 23);
+            this.lblUsuario.TabIndex = 5;
+            this.lblUsuario.Text = "Usuario";
+            this.lblUsuario.Click += new System.EventHandler(this.label2_Click);
+            // 
             // Inicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblUsuario);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.Contenedor);
             this.Controls.Add(this.nameLabel);
             this.Controls.Add(this.menu);
@@ -240,5 +270,7 @@
         private FontAwesome.Sharp.IconMenuItem iconoClientes;
         private FontAwesome.Sharp.IconMenuItem iconoReportes;
         private System.Windows.Forms.Panel Contenedor;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblUsuario;
     }
 }
