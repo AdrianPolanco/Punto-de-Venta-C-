@@ -18,3 +18,13 @@ C:\Users\adfer\source\repos\PuntodeVenta\PuntodeVenta\bin\Debug\CapaDatos.dll
 C:\Users\adfer\source\repos\PuntodeVenta\PuntodeVenta\bin\Debug\CapaEntidad.pdb
 C:\Users\adfer\source\repos\PuntodeVenta\PuntodeVenta\bin\Debug\CapaNegocio.pdb
 C:\Users\adfer\source\repos\PuntodeVenta\PuntodeVenta\bin\Debug\CapaDatos.pdb
+C:\Users\adfer\source\repos\PuntodeVenta\PuntodeVenta\obj\Debug\PuntodeVenta.frmCategorias.resources
+C:\Users\adfer\source\repos\PuntodeVenta\PuntodeVenta\obj\Debug\PuntodeVenta.frmClientes.resources
+C:\Users\adfer\source\repos\PuntodeVenta\PuntodeVenta\obj\Debug\PuntodeVenta.frmCompras.resources
+C:\Users\adfer\source\repos\PuntodeVenta\PuntodeVenta\obj\Debug\PuntodeVenta.frmProductos.resources
+C:\Users\adfer\source\repos\PuntodeVenta\PuntodeVenta\obj\Debug\PuntodeVenta.frmProveedores.resources
+C:\Users\adfer\source\repos\PuntodeVenta\PuntodeVenta\obj\Debug\PuntodeVenta.frmReportes.resources
+C:\Users\adfer\source\repos\PuntodeVenta\PuntodeVenta\obj\Debug\PuntodeVenta.frmUsuario.resources
+C:\Users\adfer\source\repos\PuntodeVenta\PuntodeVenta\obj\Debug\PuntodeVenta.frmVentas.resources
+C:\Users\adfer\source\repos\PuntodeVenta\PuntodeVenta\obj\Debug\PuntodeVenta.frmDetalleCompras.resources
+C:\Users\adfer\source\repos\PuntodeVenta\PuntodeVenta\obj\Debug\PuntodeVenta.frmDetalleVenta.resources

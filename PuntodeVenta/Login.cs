@@ -27,20 +27,28 @@ namespace PuntodeVenta
         private void botonIngresar_Click(object sender, EventArgs e)
         {
             List<Usuario> TEST = new CN_Usuario().Listar();
-            Usuario oUsuario = new CN_Usuario().Listar().Where(d => (d.Documento == txtUsuario.Text || d.Correo == txtUsuario.Text) && d.Clave == txtPassword.Text).FirstOrDefault();
+            Usuario oUsuario = new CN_Usuario().Listar().Where(d => (d.Documento == txtUsuario.Text || d.Correo == txtUsuario.Text)).FirstOrDefault();
 
-            if(oUsuario != null)
-            {
-            Inicio form = new Inicio();
-            form.Show();
-            this.Hide();
+            try { 
+                if((oUsuario.Documento == txtUsuario.Text || oUsuario.Correo == txtUsuario.Text) && oUsuario.Clave == txtPassword.Text)
+                {
+                    Inicio form = new Inicio(oUsuario);
+                    form.Show();
+                    this.Hide();
 
-            form.FormClosing += frm_clossing;
-            } else
+                    form.FormClosing += frm_clossing;
+                }else if (oUsuario.Clave != txtPassword.Text)
+                {
+                        MessageBox.Show("Contraseña incorrecta", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }
+            } catch
             {
-                MessageBox.Show("Usuario no encontrado", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                if (oUsuario == null)
+                {
+                    MessageBox.Show("Usuario no encontrado", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }               
             }
-            
+
         }
 
         private void frm_clossing(object sender, FormClosingEventArgs e)
