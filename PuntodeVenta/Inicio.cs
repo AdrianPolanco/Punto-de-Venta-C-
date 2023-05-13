@@ -18,10 +18,17 @@ namespace PuntodeVenta
         private Usuario usuarioActual;
         private static IconMenuItem MenuActivo = null;
         private static Form FormularioActivo = null;
-        public Inicio(Usuario objusuario)
+        public Inicio(Usuario objusuario = null)
         {
+            if(objusuario == null) {
+                usuarioActual = new Usuario() { NombreCompleto = "Admin Default", IdUsuario = 1 };
+            }
+            else
+            {
+                usuarioActual = objusuario;
+            }
             InitializeComponent();
-            this.usuarioActual = objusuario;
+
             
         }
 
@@ -141,6 +148,11 @@ namespace PuntodeVenta
         private void iconoReportes_Click(object sender, EventArgs e)
         {
             abrirForm(iconoVentas, new frmReportes());
+        }
+
+        private void Contenedor_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

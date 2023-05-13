@@ -21,5 +21,10 @@ namespace PuntodeVenta
         {
 
         }
+
+        private void btnGuardarRegistro_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
