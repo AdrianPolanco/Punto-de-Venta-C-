@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CapaPresentacion.Utilidades;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -28,9 +29,19 @@ namespace PuntodeVenta
         }
 
         private void frmUsuario_Load(object sender, EventArgs e)
-        {
-            // TODO: This line of code loads data into the 'dB_PUNTO_VENTADataSet.USUARIO' table. You can move, or remove it, as needed.
-           
+        {   RolRegistro.Items.Add(new OpcionCombo() { Valor = 0, Texto = "Usuario" });
+            RolRegistro.Items.Add(new OpcionCombo() {Valor = 1, Texto="Administrador" });
+
+            RolRegistro.DisplayMember = "Texto";
+            RolRegistro.ValueMember = "Valor";
+            RolRegistro.SelectedIndex = 0;
+            
+            EstadoRegistro.Items.Add(new OpcionCombo() { Valor = 0, Texto = "Inactivo" });
+            EstadoRegistro.Items.Add(new OpcionCombo() { Valor = 1, Texto = "Activo" });
+
+            EstadoRegistro.DisplayMember = "Texto";
+            EstadoRegistro.ValueMember = "Valor";
+            EstadoRegistro.SelectedIndex = 0;
 
         }
 
