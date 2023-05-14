@@ -78,11 +78,14 @@ namespace PuntodeVenta
             FormularioActivo = formulario;
             formulario.TopLevel = false;
             formulario.FormBorderStyle = FormBorderStyle.None;
-            formulario.Dock = DockStyle.Fill;
+          
             formulario.BackColor = Color.PaleGreen;
 
+            this.AutoSize = true;
+            Contenedor.AutoSize = true;
             Contenedor.Controls.Add(formulario);
             formulario.Show();
+
         }
 
         private void iconoUsuario_Click(object sender, EventArgs e)

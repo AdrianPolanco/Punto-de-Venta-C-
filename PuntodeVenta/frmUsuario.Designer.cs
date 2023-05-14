@@ -80,7 +80,7 @@
             this.label1.Dock = System.Windows.Forms.DockStyle.Left;
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(299, 563);
+            this.label1.Size = new System.Drawing.Size(299, 641);
             this.label1.TabIndex = 0;
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
@@ -224,7 +224,7 @@
             this.btnGuardarRegistro.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnGuardarRegistro.IconSize = 24;
             this.btnGuardarRegistro.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnGuardarRegistro.Location = new System.Drawing.Point(12, 466);
+            this.btnGuardarRegistro.Location = new System.Drawing.Point(72, 475);
             this.btnGuardarRegistro.Name = "btnGuardarRegistro";
             this.btnGuardarRegistro.Padding = new System.Windows.Forms.Padding(3);
             this.btnGuardarRegistro.Size = new System.Drawing.Size(131, 40);
@@ -244,7 +244,7 @@
             this.btnEditarRegistro.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnEditarRegistro.IconSize = 24;
             this.btnEditarRegistro.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEditarRegistro.Location = new System.Drawing.Point(149, 466);
+            this.btnEditarRegistro.Location = new System.Drawing.Point(72, 521);
             this.btnEditarRegistro.Name = "btnEditarRegistro";
             this.btnEditarRegistro.Padding = new System.Windows.Forms.Padding(3);
             this.btnEditarRegistro.Size = new System.Drawing.Size(131, 40);
@@ -263,7 +263,7 @@
             this.btnEliminarRegistro.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnEliminarRegistro.IconSize = 24;
             this.btnEliminarRegistro.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEliminarRegistro.Location = new System.Drawing.Point(83, 512);
+            this.btnEliminarRegistro.Location = new System.Drawing.Point(72, 567);
             this.btnEliminarRegistro.Name = "btnEliminarRegistro";
             this.btnEliminarRegistro.Padding = new System.Windows.Forms.Padding(3);
             this.btnEliminarRegistro.Size = new System.Drawing.Size(131, 39);
@@ -420,6 +420,7 @@
             this.Rol.MinimumWidth = 6;
             this.Rol.Name = "Rol";
             this.Rol.ReadOnly = true;
+            this.Rol.Width = 125;
             // 
             // Estado
             // 
@@ -427,6 +428,7 @@
             this.Estado.MinimumWidth = 6;
             this.Estado.Name = "Estado";
             this.Estado.ReadOnly = true;
+            this.Estado.Width = 125;
             // 
             // EstadoValor
             // 
@@ -462,7 +464,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gold;
-            this.ClientSize = new System.Drawing.Size(1167, 563);
+            this.ClientSize = new System.Drawing.Size(1167, 641);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.txtId);
             this.Controls.Add(this.dataGridView1);
