@@ -45,6 +45,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CD_PERMISOS.cs" />
+    <Compile Include="CD_ROL.cs" />
     <Compile Include="CD_Usuario.cs" />
     <Compile Include="Conexion.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

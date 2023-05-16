@@ -1,4 +1,6 @@
 ﻿using CapaPresentacion.Utilidades;
+using CapaNegocio;
+using CapaEntidad;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -29,12 +31,7 @@ namespace PuntodeVenta
         }
 
         private void frmUsuario_Load(object sender, EventArgs e)
-        {   RolRegistro.Items.Add(new OpcionCombo() { Valor = 0, Texto = "Usuario" });
-            RolRegistro.Items.Add(new OpcionCombo() {Valor = 1, Texto="Administrador" });
-
-            RolRegistro.DisplayMember = "Texto";
-            RolRegistro.ValueMember = "Valor";
-            RolRegistro.SelectedIndex = 0;
+        {   
             
             EstadoRegistro.Items.Add(new OpcionCombo() { Valor = 0, Texto = "Inactivo" });
             EstadoRegistro.Items.Add(new OpcionCombo() { Valor = 1, Texto = "Activo" });
@@ -42,6 +39,16 @@ namespace PuntodeVenta
             EstadoRegistro.DisplayMember = "Texto";
             EstadoRegistro.ValueMember = "Valor";
             EstadoRegistro.SelectedIndex = 0;
+
+            List<Rol> listaRol = new CN_ROL().Listar();
+
+            foreach (Rol item in listaRol)
+            {
+                RolRegistro.Items.Add(new OpcionCombo() { Valor = item.IdRol, Texto = item.Descripcion});   
+            } 
+            RolRegistro.DisplayMember = "Texto";
+            RolRegistro.ValueMember = "Valor";
+            RolRegistro.SelectedIndex = 0;  
 
         }
 
@@ -51,6 +58,16 @@ namespace PuntodeVenta
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void RolRegistro_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
         {
 
         }
