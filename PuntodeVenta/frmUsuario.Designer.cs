@@ -55,7 +55,7 @@
             this.uSUARIOBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.uSUARIOTableAdapter = new PuntodeVenta.DB_PUNTO_VENTADataSetTableAdapters.USUARIOTableAdapter();
             this.dBPUNTOVENTADataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvData = new System.Windows.Forms.DataGridView();
             this.btnSeleccionar = new System.Windows.Forms.DataGridViewButtonColumn();
             this.IdUsuario = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Documento = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -66,12 +66,12 @@
             this.Rol = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Estado = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.EstadoValor = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.txtId = new System.Windows.Forms.TextBox();
+            this.IdRegistro = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dB_PUNTO_VENTADataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.uSUARIOBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dBPUNTOVENTADataSetBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvData)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -314,10 +314,10 @@
             this.dBPUNTOVENTADataSetBindingSource.DataSource = this.dB_PUNTO_VENTADataSet;
             this.dBPUNTOVENTADataSetBindingSource.Position = 0;
             // 
-            // dataGridView1
+            // dgvData
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dgvData.AllowUserToAddRows = false;
+            this.dgvData.AllowUserToDeleteRows = false;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -326,9 +326,9 @@
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvData.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvData.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.btnSeleccionar,
             this.IdUsuario,
             this.Documento,
@@ -339,10 +339,10 @@
             this.Rol,
             this.Estado,
             this.EstadoValor});
-            this.dataGridView1.Location = new System.Drawing.Point(336, 75);
-            this.dataGridView1.MultiSelect = false;
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
+            this.dgvData.Location = new System.Drawing.Point(336, 75);
+            this.dgvData.MultiSelect = false;
+            this.dgvData.Name = "dgvData";
+            this.dgvData.ReadOnly = true;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -350,12 +350,12 @@
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.PaleGreen;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(832, 457);
-            this.dataGridView1.TabIndex = 26;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_1);
+            this.dgvData.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvData.RowHeadersWidth = 51;
+            this.dgvData.RowTemplate.Height = 28;
+            this.dgvData.Size = new System.Drawing.Size(832, 457);
+            this.dgvData.TabIndex = 26;
+            this.dgvData.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_1);
             // 
             // btnSeleccionar
             // 
@@ -441,25 +441,26 @@
             this.EstadoValor.Visible = false;
             this.EstadoValor.Width = 125;
             // 
-            // txtId
+            // IdRegistro
             // 
-            this.txtId.Location = new System.Drawing.Point(1061, 38);
-            this.txtId.Name = "txtId";
-            this.txtId.Size = new System.Drawing.Size(83, 22);
-            this.txtId.TabIndex = 27;
-            this.txtId.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.IdRegistro.Location = new System.Drawing.Point(222, 63);
+            this.IdRegistro.Name = "IdRegistro";
+            this.IdRegistro.Size = new System.Drawing.Size(46, 22);
+            this.IdRegistro.TabIndex = 27;
+            this.IdRegistro.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.Color.Transparent;
+            this.label11.BackColor = System.Drawing.Color.WhiteSmoke;
             this.label11.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(952, 38);
+            this.label11.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label11.Location = new System.Drawing.Point(177, 63);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(103, 23);
+            this.label11.Size = new System.Drawing.Size(39, 23);
             this.label11.TabIndex = 28;
-            this.label11.Text = "Buscar ID:";
+            this.label11.Text = "ID:";
+            this.label11.Click += new System.EventHandler(this.label11_Click);
             // 
             // frmUsuario
             // 
@@ -468,8 +469,8 @@
             this.BackColor = System.Drawing.Color.Gold;
             this.ClientSize = new System.Drawing.Size(1167, 641);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.txtId);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.IdRegistro);
+            this.Controls.Add(this.dgvData);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.btnEliminarRegistro);
@@ -496,7 +497,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dB_PUNTO_VENTADataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.uSUARIOBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dBPUNTOVENTADataSetBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvData)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -528,7 +529,7 @@
         private System.Windows.Forms.BindingSource uSUARIOBindingSource;
         private DB_PUNTO_VENTADataSetTableAdapters.USUARIOTableAdapter uSUARIOTableAdapter;
         private System.Windows.Forms.BindingSource dBPUNTOVENTADataSetBindingSource;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvData;
         private System.Windows.Forms.DataGridViewButtonColumn btnSeleccionar;
         private System.Windows.Forms.DataGridViewTextBoxColumn IdUsuario;
         private System.Windows.Forms.DataGridViewTextBoxColumn Documento;
@@ -539,7 +540,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Rol;
         private System.Windows.Forms.DataGridViewTextBoxColumn Estado;
         private System.Windows.Forms.DataGridViewTextBoxColumn EstadoValor;
-        private System.Windows.Forms.TextBox txtId;
+        private System.Windows.Forms.TextBox IdRegistro;
         private System.Windows.Forms.Label label11;
     }
 }

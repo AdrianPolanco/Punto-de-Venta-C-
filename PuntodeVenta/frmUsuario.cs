@@ -25,10 +25,45 @@ namespace PuntodeVenta
 
         }
 
-        private void btnGuardarRegistro_Click(object sender, EventArgs e)
+        private DialogResult Autenticar(List<TextBox> campo)
         {
-
+            foreach (TextBox item in campo)
+            {
+                if (item.Text == "")
+                {
+                    return MessageBox.Show("Todos los campos son requeridos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                
+            }
+            agregarFila();
+            Limpiar();
+            return MessageBox.Show("Usuario creado correctamente", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
+        private void agregarFila()
+        {
+                dgvData.Rows.Add(new object[] { "", IdRegistro.Text, DocumentoRegistro.Text, NombreRegistro.Text, CorreoRegistro.Text,
+                ClaveRegistro.Text, ((OpcionCombo)RolRegistro.SelectedItem).Valor.ToString(), ((OpcionCombo)RolRegistro.SelectedItem).Texto.ToString(),
+                ((OpcionCombo)EstadoRegistro.SelectedItem).Texto.ToString(), ((OpcionCombo)EstadoRegistro.SelectedItem).Texto.ToString()});
+        }
+
+        private void Limpiar()
+        {
+            IdRegistro.Text = "";
+            DocumentoRegistro.Text = "";
+            CorreoRegistro.Text = "";
+            NombreRegistro.Text = "";
+            ClaveRegistro.Text = "";
+            ConfirmarClaveRegistro.Text = "";
+            RolRegistro.SelectedItem = 0;
+            EstadoRegistro.SelectedItem = 0;
+        }
+
+    private void btnGuardarRegistro_Click(object sender, EventArgs e)
+    {
+            List<TextBox> listaTextBox = new List<TextBox>() { DocumentoRegistro, NombreRegistro, CorreoRegistro, ClaveRegistro, ConfirmarClaveRegistro };
+            Autenticar(listaTextBox);
+    } 
 
         private void frmUsuario_Load(object sender, EventArgs e)
         {   
@@ -68,6 +103,11 @@ namespace PuntodeVenta
         }
 
         private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void label11_Click(object sender, EventArgs e)
         {
 
         }
