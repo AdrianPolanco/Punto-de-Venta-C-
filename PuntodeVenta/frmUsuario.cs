@@ -85,6 +85,19 @@ namespace PuntodeVenta
             RolRegistro.ValueMember = "Valor";
             RolRegistro.SelectedIndex = 0;  
 
+            foreach(DataGridViewColumn column in dgvData.Columns)
+            {
+                if (column.Visible && column.Name != "btnSeleccionar")
+                {
+                    filtrarRegistro.Items.Add(new OpcionCombo() { Valor = column.Name, Texto = column.HeaderText });
+                }
+            }
+
+            filtrarRegistro.DisplayMember = "Texto";
+            filtrarRegistro.ValueMember = "Valor";
+            filtrarRegistro.SelectedIndex = 0;
+
+
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -108,6 +121,11 @@ namespace PuntodeVenta
         }
 
         private void label11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

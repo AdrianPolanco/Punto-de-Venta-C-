@@ -68,6 +68,12 @@
             this.EstadoValor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.IdRegistro = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.filtrarRegistro = new System.Windows.Forms.ComboBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.buscarRegistro = new System.Windows.Forms.TextBox();
+            this.buscarRegistroBoton = new FontAwesome.Sharp.IconButton();
+            this.limpiarRegistroBoton = new FontAwesome.Sharp.IconButton();
             ((System.ComponentModel.ISupportInitialize)(this.dB_PUNTO_VENTADataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.uSUARIOBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dBPUNTOVENTADataSetBindingSource)).BeginInit();
@@ -286,12 +292,12 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Monotype Corsiva", 36F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
+            this.label10.Font = new System.Drawing.Font("Monotype Corsiva", 24F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
                 | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(343, 0);
+            this.label10.Location = new System.Drawing.Point(308, 20);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(406, 72);
+            this.label10.Size = new System.Drawing.Size(282, 49);
             this.label10.TabIndex = 25;
             this.label10.Text = "Lista de usuarios";
             // 
@@ -339,7 +345,7 @@
             this.Rol,
             this.Estado,
             this.EstadoValor});
-            this.dgvData.Location = new System.Drawing.Point(336, 75);
+            this.dgvData.Location = new System.Drawing.Point(317, 149);
             this.dgvData.MultiSelect = false;
             this.dgvData.Name = "dgvData";
             this.dgvData.ReadOnly = true;
@@ -453,14 +459,86 @@
             // 
             this.label11.AutoSize = true;
             this.label11.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.label11.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Font = new System.Drawing.Font("Times New Roman", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label11.Location = new System.Drawing.Point(177, 63);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(39, 23);
+            this.label11.Size = new System.Drawing.Size(30, 18);
             this.label11.TabIndex = 28;
             this.label11.Text = "ID:";
             this.label11.Click += new System.EventHandler(this.label11_Click);
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.Color.Transparent;
+            this.label12.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.White;
+            this.label12.Location = new System.Drawing.Point(767, 84);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(109, 23);
+            this.label12.TabIndex = 29;
+            this.label12.Text = "Buscar por:";
+            // 
+            // filtrarRegistro
+            // 
+            this.filtrarRegistro.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.filtrarRegistro.FormattingEnabled = true;
+            this.filtrarRegistro.ItemHeight = 16;
+            this.filtrarRegistro.Location = new System.Drawing.Point(892, 84);
+            this.filtrarRegistro.Name = "filtrarRegistro";
+            this.filtrarRegistro.Size = new System.Drawing.Size(130, 24);
+            this.filtrarRegistro.TabIndex = 30;
+            this.filtrarRegistro.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(743, 44);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(0, 16);
+            this.label13.TabIndex = 31;
+            // 
+            // buscarRegistro
+            // 
+            this.buscarRegistro.Location = new System.Drawing.Point(1030, 84);
+            this.buscarRegistro.Name = "buscarRegistro";
+            this.buscarRegistro.Size = new System.Drawing.Size(108, 22);
+            this.buscarRegistro.TabIndex = 32;
+            // 
+            // buscarRegistroBoton
+            // 
+            this.buscarRegistroBoton.BackColor = System.Drawing.Color.DarkGreen;
+            this.buscarRegistroBoton.Font = new System.Drawing.Font("Monotype Corsiva", 10.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buscarRegistroBoton.ForeColor = System.Drawing.Color.White;
+            this.buscarRegistroBoton.IconChar = FontAwesome.Sharp.IconChar.MagnifyingGlass;
+            this.buscarRegistroBoton.IconColor = System.Drawing.Color.White;
+            this.buscarRegistroBoton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.buscarRegistroBoton.IconSize = 20;
+            this.buscarRegistroBoton.Location = new System.Drawing.Point(1040, 109);
+            this.buscarRegistroBoton.Name = "buscarRegistroBoton";
+            this.buscarRegistroBoton.Padding = new System.Windows.Forms.Padding(3);
+            this.buscarRegistroBoton.Size = new System.Drawing.Size(46, 34);
+            this.buscarRegistroBoton.TabIndex = 33;
+            this.buscarRegistroBoton.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.buscarRegistroBoton.UseVisualStyleBackColor = false;
+            // 
+            // limpiarRegistroBoton
+            // 
+            this.limpiarRegistroBoton.BackColor = System.Drawing.Color.Crimson;
+            this.limpiarRegistroBoton.Font = new System.Drawing.Font("Monotype Corsiva", 10.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.limpiarRegistroBoton.ForeColor = System.Drawing.Color.White;
+            this.limpiarRegistroBoton.IconChar = FontAwesome.Sharp.IconChar.Broom;
+            this.limpiarRegistroBoton.IconColor = System.Drawing.Color.White;
+            this.limpiarRegistroBoton.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.limpiarRegistroBoton.IconSize = 20;
+            this.limpiarRegistroBoton.Location = new System.Drawing.Point(1092, 109);
+            this.limpiarRegistroBoton.Name = "limpiarRegistroBoton";
+            this.limpiarRegistroBoton.Padding = new System.Windows.Forms.Padding(3);
+            this.limpiarRegistroBoton.Size = new System.Drawing.Size(46, 34);
+            this.limpiarRegistroBoton.TabIndex = 34;
+            this.limpiarRegistroBoton.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.limpiarRegistroBoton.UseVisualStyleBackColor = false;
             // 
             // frmUsuario
             // 
@@ -468,6 +546,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gold;
             this.ClientSize = new System.Drawing.Size(1167, 641);
+            this.Controls.Add(this.limpiarRegistroBoton);
+            this.Controls.Add(this.buscarRegistroBoton);
+            this.Controls.Add(this.buscarRegistro);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.filtrarRegistro);
+            this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.IdRegistro);
             this.Controls.Add(this.dgvData);
@@ -542,5 +626,11 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn EstadoValor;
         private System.Windows.Forms.TextBox IdRegistro;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.ComboBox filtrarRegistro;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.TextBox buscarRegistro;
+        private FontAwesome.Sharp.IconButton buscarRegistroBoton;
+        private FontAwesome.Sharp.IconButton limpiarRegistroBoton;
     }
 }
